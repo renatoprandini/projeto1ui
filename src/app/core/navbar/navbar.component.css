@@ -1,4 +1,46 @@
 .navbar{
   padding: 10px 0;
-  background-color: #1e94d2;  
+  background-image: linear-gradient(90deg, PaleTurquoise , Plum );  
+}
+
+.navbar-toggle{
+  color: #fff;
+}
+
+.navbar-menu{
+  position:fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 210px;
+  margin: 0;
+  padding: 0;
+  z-index: 9998;
+  background-image: linear-gradient(180deg, PaleTurquoise , LightCoral );;
+  list-style: none;
+}
+
+.navbar-usuario{
+  padding: 25px;
+  margin-bottom: 15px;
+  border-bottom: 2px solid Salmon;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #FF3E96;
+}
+
+.navbar-menuitem{
+  padding: 15px;
+  text-decoration: inherit;
+  
+}
+
+.navbar-menuitem a{
+  color: Coral;
+  text-decoration: none;
+  font-weight: bold;
+}
+.navbar-menuitem a:hover{
+  color: Firebrick;
+
 }
