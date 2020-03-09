@@ -6,7 +6,8 @@ body{
 
 @media(min-width: 1200px) {
     .container{
-        width: 300px;
+        width: 1150px;
         margin: 0 auto;
     }
 }
+
