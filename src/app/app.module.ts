@@ -7,6 +7,7 @@ import { CoreModule } from './core/core.module';
 import { RouterModule, Routes } from '@angular/router';
 import { CidadesModule } from './cidades/cidades.module';
 import { CidadesPesquisaComponent } from './cidades/cidades-pesquisa/cidades-pesquisa.component';
+import {HttpClientModule} from '@angular/common/http';
 
 const routes: Routes = [
   {path: 'cidades', component: CidadesPesquisaComponent}
@@ -18,6 +19,7 @@ const routes: Routes = [
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     RouterModule.forRoot(routes),
     AppRoutingModule,
     CoreModule,
