@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CidadeFiltro, CidadesService } from '../cidades.service';
 
 @Component({
   selector: 'app-cidades-pesquisa',
@@ -7,9 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CidadesPesquisaComponent implements OnInit {
 
-  constructor() { }
+  totalRegistro = 0;
+  filtro = new CidadeFiltro();
+  cidades = [];
+
+
+
+  constructor(private cidadesService: CidadesService) { }
 
   ngOnInit() {
+  }
+
+  pesquisar(pagina=0){
+    this.filtro.pagina = pagina;
   }
 
 }

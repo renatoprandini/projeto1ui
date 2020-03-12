@@ -8,6 +8,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { CidadesModule } from './cidades/cidades.module';
 import { CidadesPesquisaComponent } from './cidades/cidades-pesquisa/cidades-pesquisa.component';
 import {HttpClientModule} from '@angular/common/http';
+import { CidadesService } from './cidades/cidades.service';
 
 const routes: Routes = [
   {path: 'cidades', component: CidadesPesquisaComponent}
@@ -26,7 +27,7 @@ const routes: Routes = [
     CidadesModule
     
   ],
-  providers: [],
+  providers: [CidadesService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
