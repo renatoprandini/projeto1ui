@@ -1,6 +1,6 @@
 .navbar{
   padding: 10px 0;
-  background-image: linear-gradient(90deg, PaleTurquoise , Plum );  
+  background-color: SteelBlue;  
 }
 
 .navbar-toggle{
@@ -16,7 +16,7 @@
   margin: 0;
   padding: 0;
   z-index: 9998;
-  background-image: linear-gradient(180deg, PaleTurquoise , LightCoral );;
+  background-color: #3A5FCD;
   list-style: none;
 }
 
